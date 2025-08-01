@@ -53,17 +53,34 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
     .gallery img {
-      width: 100%;
-      max-width: 200px;
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
       margin: 10px;
       border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
     }
     .contact a {
       display: inline-block;
-      margin: 5px 10px;
-      color: #e75480;
+      margin: 8px;
+      padding: 10px 16px;
+      background-color: #ffb6c1;
+      color: white;
       text-decoration: none;
+      border-radius: 8px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .contact a:hover {
+      background-color: #ff80ab;
+      box-shadow: 0 0 10px rgba(255, 128, 171, 0.6);
+      transform: scale(1.05);
+    }
+    .contact a:active {
+      transform: scale(0.95);
+      box-shadow: 0 0 5px rgba(255, 128, 171, 0.8);
     }
   </style>
 </head>
@@ -72,34 +89,29 @@
     <img src="profile.jpg" alt="Foto Profil Najwa Sattya">
     <h1>Najwa Sattya Putri Lovearsa</h1>
     <p>
-      Siswa Kelas XI di SMA Muhammadiyah 1 Semarang<br>
+      Siswa Kelas XI di SMA Muhammadiyah 1 Semarang.<br>
       Memiliki ketertarikan dalam bidang Bahasa Inggris, public speaking, dan kepemimpinan.<br>
-      Disiplin, komunikatif, dan aktif dalam berbagai kegiatan sekolah seperti Paskibra, IPM, dan Dewan Pramuka.<br>
+      Disiplin, komunikatif, serta aktif dalam organisasi Paskibra, IPM, dan Dewan Pramuka.<br>
       Sedang mengembangkan diri di bidang teknologi dan digital portfolio.<br>
-      Ingin mempelajari lebih dalam tentang pemrograman, desain web, dan pengembangan diri.
+      Tertarik mempelajari desain web, pengembangan aplikasi, dan keterampilan pemrograman.
     </p>
-  </header>  <div class="section education">
-    <h2>Riwayat Pendidikan</h2>
-    <p>
-      - SDN Keputran 2 Yogyakarta (2016–2020)<br>
-      - SMPN 4 Sewon (2021–2023)<br>
-      - SMA Muhammadiyah 1 Semarang (2023–sekarang)
-    </p>
-  </div>  <div class="section cv">
+  </header>  <div class="section cv">
     <h2>Curriculum Vitae</h2>
     <p>Segera hadir.</p>
+  </div>  <div class="section education">
+    <h2>Riwayat Pendidikan</h2>
+    <p>SDN Keputran 2 Yogyakarta (2016–2020)</p>
+    <p>SMPN 4 Sewon (2021–2023)</p>
   </div>  <div class="section gallery">
     <h2>Galeri Kegiatan</h2>
     <img src="kegiatan1.jpg" alt="Kegiatan 1">
     <img src="kegiatan2.jpg" alt="Kegiatan 2">
     <img src="kegiatan3.jpg" alt="Kegiatan 3">
-    <p>(Tambahkan foto kegiatanmu ke folder yang sama dengan file ini dan ubah nama filenya jika perlu)</p>
   </div>  <div class="section contact">
     <h2>Kontak</h2>
-    <p>Email: <a href="mailto:lovearsanajwa@gmail.com">lovearsanajwa@gmail.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/veaarsa" target="_blank">@veaarsa</a></p>
-    <p>WhatsApp: <a href="https://wa.me/6283145314954" target="_blank">0831-4531-4954</a></p>
-    <p>Kelas: XI</p>
+    <a href="mailto:lovearsanajwa@gmail.com" target="_blank">Email</a>
+    <a href="https://instagram.com/veaarsa" target="_blank">Instagram</a>
+    <a href="https://wa.me/6283145314954" target="_blank">WhatsApp</a>
   </div>
 </body>
 </html>
